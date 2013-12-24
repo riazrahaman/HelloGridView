@@ -74,7 +74,7 @@ public class MainActivity extends Activity {
 
         @Override
         public void onViewCreated(View view, Bundle SavedInstanceState) {
-            mGridView = (GridView) view.findViewById(R.layout.fragment_main);
+            mGridView = (GridView) view.findViewById(R.id.gridview);
             mGridView.setAdapter(new ImageAdapter(getActivity()));
 
             mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
