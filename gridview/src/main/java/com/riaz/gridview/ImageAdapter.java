@@ -67,9 +67,9 @@ public class ImageAdapter extends BaseAdapter{
         Log.e("RIAZ", "position is" + position);
         if(convertView == null) {
             imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(85,85));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            imageView.setPadding(8,8,8,8);
+            imageView.setLayoutParams(new GridView.LayoutParams(90,90));
+            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+//            imageView.setPadding(8,8,8,8);
         }
         else {
             imageView = (ImageView) convertView;
